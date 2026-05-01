@@ -1,5 +1,11 @@
 import pandas as pd
+import os
 from sqlalchemy import create_engine
+from dotenv import load_dotenv
+
+load_dotenv()
+
+DB_URL = os.getenv("DB_URL")
 
 def extract(filepath):
     df = pd.read_csv(filepath)
@@ -39,5 +45,4 @@ def load(df, db_url, table_name):
     print(f"Loaded {len(df)} rows into '{table_name}'")
 
 # Replace with your actual credentials
-DB_URL = "postgresql://postgres:LuisAngelo5847!@localhost:5432/etl_db"
 load(df, DB_URL, "employees")
