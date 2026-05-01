@@ -1,0 +1,6 @@
+id,name,email,age,salary,join_date
+1,Alice Smith,alice@example.com,30,55000,2021-03-15
+2,bob jones,,25,,2022/01/10
+3,Carol White,carol@example.com,,-1,2020-11-30
+4,,dave@example.com,28,72000,2023-05-01
+5,Eve Brown,eve@example.com,35,68000,
